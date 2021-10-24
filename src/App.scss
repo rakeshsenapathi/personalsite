@@ -1,0 +1,149 @@
+.App {
+  text-align: center;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.logo{
+  position: relative;
+  margin-top: 2rem;
+  &-image{
+    width: 150px;
+    height: 150px;
+    outline: none;
+    border:none;
+    border-radius: 50%;
+    z-index: 0;
+    position: relative;
+    margin-top: 8%;
+    &::before{
+      content: "";
+      z-index: -1;
+    background: linear-gradient( 
+45deg,#ff0000,#ff7300,#fffb00,#48ff00,#00ffd5,#002bff,#7a00ff,#ff00c8,#ff0000 );
+    position: absolute;
+    top: -2px;
+    border-radius: 50%;
+    left: -1px;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    background-size: 300%;
+    filter: blur(5px);
+    opacity: 1;
+    animation: glowingbg 5s linear infinite;
+    transition: opacity .3s ease-in-out;
+    }
+    &::after{
+      z-index: -1;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 1px;
+      top: 2px;
+      background-image: url(./resources/images/Logo.png);
+      background-size: cover;
+      border-radius: 50%;
+    }
+  }
+  &-name{
+    line-height: 4rem;
+    color: black;
+    font-size: 2.5rem;
+  }
+  &-para{
+    font-size: 1.5rem;
+    &--1{
+      font-size: 2rem;
+      margin-top: 3rem;
+      font-style: italic;
+    }
+    &--2{
+      font-size: 1.5rem;
+      margin-top: 3rem;
+    }
+  }
+}
+
+.header{
+  &-image{
+    width: 100%;
+    height: 30rem;
+  }
+}
+
+// Animation for glowing in the background
+@keyframes glowingbg {
+  0%{
+    background-position:0 50%;
+    }
+    50%{background-position:100% 50%;
+    }
+    100%{background-position:0 50%;
+    }
+}
+
+.section-logo{
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+// Social Icons
+.socials{
+  margin-top: 3rem;
+  &-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// scaleOverHover animation
+.scaleOnHover{
+  transition: all .2s ease-in-out;
+  &:hover{
+    transform: scale(1.2);
+  }
+}
+
+// Common usage
+.marginLeftRight{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.connectBtn{
+  margin-top: 3rem;
+  background: #cc2b5e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.container-first{
+  width: 100%;
+  height: auto;
+}
+
+.container-last{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-color: black;
+}
+
+.attributes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-container{
+    background-color: black;
+  }
+}
