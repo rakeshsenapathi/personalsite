@@ -124,6 +124,10 @@
   
   padding: 2rem;
   border-radius: 5px;
+  transition: all .3s ease-in;
+  &:hover{
+    background: blue;
+  }
 }
 
 .container-first{
@@ -146,4 +150,9 @@
   &-container{
     background-color: black;
   }
+}
+
+.hyperlink, :visited, :focus{
+  text-decoration: none;
+  color: inherit;
 }

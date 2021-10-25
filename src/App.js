@@ -15,18 +15,18 @@ function App() {
           <div className = "logo-image"></div>
         </div>
         <h1 className="logo-para--1">Software Engineer</h1>
-        <h1 className="logo-para--2">Degen | Memer | Sports/E-sports enthusiast</h1>
+        <h1 className="logo-para--2">web3 ethusiast | nft | sports</h1>
       </section>
       <section className="socials">
         <div className = "socials-icons">
-          <span className = "scaleOnHover marginLeftRight glowbg-icons"><AiFillGithub size = "3.5rem"/></span>
-          <span className = "scaleOnHover marginLeftRight glowbg-icons" ><AiFillLinkedin size = "3.5rem"/></span>
-          <span className = "scaleOnHover marginLeftRight glowbg-icons"><AiFillMediumSquare size = "3.5rem"/></span>
+          <a className = "hyperlink scaleOnHover marginLeftRight" target="_blank" rel="noopener noreferrer" href = "https://github.com/rakeshsenapathi"><AiFillGithub size = "3.5rem"/></a>
+          <a className = "hyperlink scaleOnHover marginLeftRight" target="_blank" rel="noopener noreferrer" href = "https://www.linkedin.com/in/rakeshsenapathi"><AiFillLinkedin size = "3.5rem"/></a>  
+          <a className = "hyperlink scaleOnHover marginLeftRight" target="_blank" rel="noopener noreferrer" href = "https://medium.com/@rakeshsenapathi"><AiFillMediumSquare size = "3.5rem"/></a>
         </div>
       </section>
-      <button className="connectBtn">
-        Connect
-      </button>
+      <a className = "hyperlink scaleOnHover marginLeftRight" href = "mailto:rakeshsenapathi@gmail.com">
+        <button className="connectBtn">Send a mail</button>
+      </a>
       </div>
       <div className="container-last">
       <section className="attributes">
